@@ -12,7 +12,6 @@
 
     <ItemGroup>
       <ProjectReference Include="..\SistemaReservasSalas.Application\SistemaReservasSalas.Application.csproj" />
-      <ProjectReference Include="..\SistemaReservasSalas.Infrastructure\SistemaReservasSalas.Infrastructure.csproj" />
     </ItemGroup>
 
 </Project>

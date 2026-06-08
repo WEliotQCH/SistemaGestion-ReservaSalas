@@ -10,4 +10,11 @@
       <ProjectReference Include="..\SistemaReservasSalas.Domain\SistemaReservasSalas.Domain.csproj" />
     </ItemGroup>
 
+    <ItemGroup>
+      <Folder Include="Abstractions\" />
+      <Folder Include="Behaviors\" />
+      <Folder Include="DTOs\" />
+      <Folder Include="Features\" />
+    </ItemGroup>
+
 </Project>
