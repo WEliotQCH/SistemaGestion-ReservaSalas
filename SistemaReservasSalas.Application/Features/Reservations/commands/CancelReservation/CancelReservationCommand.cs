@@ -1,6 +1,6 @@
-﻿namespace SistemaReservasSalas.Application.Features.Reservations.commands.CancelReservation;
+﻿using MediatR;
 
-public class CancelReservationCommand
-{
-    
-}
+namespace SistemaReservasSalas.Application.Features.Reservations.Commands.CancelReservation;
+
+public record CancelReservationCommand(int Id)
+    : IRequest<bool>;

@@ -1,6 +1,7 @@
-﻿namespace SistemaReservasSalas.Application.Features.Reservations.Queries.GetReservationById;
+﻿using MediatR;
+using SistemaReservasSalas.Application.DTOs;
 
-public class GetReservationByIdQuery
-{
-    
-}
+namespace SistemaReservasSalas.Application.Features.Reservations.Queries.GetReservationById;
+
+public record GetReservationByIdQuery(int Id)
+    : IRequest<ReservationDto?>;
