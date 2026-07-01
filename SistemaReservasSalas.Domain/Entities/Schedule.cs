@@ -17,4 +17,11 @@ public class Schedule : BaseEntity
         StartTime = startTime;
         EndTime = endTime;
     }
+    public void Update(
+        TimeOnly startTime,
+        TimeOnly endTime)
+    {
+        StartTime = startTime;
+        EndTime = endTime;
+    }
 }

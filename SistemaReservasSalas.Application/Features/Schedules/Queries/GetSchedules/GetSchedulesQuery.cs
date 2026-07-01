@@ -1,6 +1,7 @@
-﻿namespace SistemaReservasSalas.Application.Features.Schedules.Queries.GetSchedules;
+﻿using MediatR;
+using SistemaReservasSalas.Application.DTOs;
 
-public class GetSchedulesQuery
-{
-    
-}
+namespace SistemaReservasSalas.Application.Features.Schedules.Queries.GetSchedules;
+
+public record GetSchedulesQuery
+    : IRequest<List<ScheduleDto>>;

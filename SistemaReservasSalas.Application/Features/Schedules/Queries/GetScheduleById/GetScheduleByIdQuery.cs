@@ -1,6 +1,7 @@
-﻿namespace SistemaReservasSalas.Application.Features.Schedules.Queries.GetScheduleById;
+﻿using MediatR;
+using SistemaReservasSalas.Application.DTOs;
 
-public class GetScheduleByIdQuery
-{
-    
-}
+namespace SistemaReservasSalas.Application.Features.Schedules.Queries.GetScheduleById;
+
+public record GetScheduleByIdQuery(int Id)
+    : IRequest<ScheduleDto?>;

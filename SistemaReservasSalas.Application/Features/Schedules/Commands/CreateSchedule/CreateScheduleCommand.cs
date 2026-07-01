@@ -1,6 +1,8 @@
-﻿namespace SistemaReservasSalas.Application.Features.Schedules.Commands.CreateSchedule;
+﻿using MediatR;
 
-public class CreateScheduleCommand
-{
-    
-}
+namespace SistemaReservasSalas.Application.Features.Schedules.Commands.CreateSchedule;
+
+public record CreateScheduleCommand(
+    TimeOnly StartTime,
+    TimeOnly EndTime
+) : IRequest<int>;

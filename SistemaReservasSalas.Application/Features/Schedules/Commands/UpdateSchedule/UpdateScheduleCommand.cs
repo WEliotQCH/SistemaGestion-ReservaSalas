@@ -1,6 +1,9 @@
-﻿namespace SistemaReservasSalas.Application.Features.Schedules.Commands.UpdateSchedule;
+﻿using MediatR;
 
-public class UpdateScheduleCommand
-{
-    
-}
+namespace SistemaReservasSalas.Application.Features.Schedules.Commands.UpdateSchedule;
+
+public record UpdateScheduleCommand(
+    int Id,
+    TimeOnly StartTime,
+    TimeOnly EndTime
+) : IRequest<bool>;
