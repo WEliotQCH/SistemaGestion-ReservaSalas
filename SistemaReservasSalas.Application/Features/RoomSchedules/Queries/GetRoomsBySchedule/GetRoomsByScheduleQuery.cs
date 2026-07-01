@@ -1,6 +1,8 @@
-﻿namespace SistemaReservasSalas.Application.Features.RoomSchedules.Queries.GetRoomsBySchedule;
+﻿using MediatR;
+using SistemaReservasSalas.Application.DTOs;
 
-public class GetRoomsByScheduleQuery
-{
-    
-}
+namespace SistemaReservasSalas.Application.Features.RoomSchedules.Queries.GetRoomsBySchedule;
+
+public record GetRoomsByScheduleQuery(
+    int ScheduleId
+) : IRequest<List<RoomDto>>;

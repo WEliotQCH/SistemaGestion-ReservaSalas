@@ -1,6 +1,8 @@
-﻿namespace SistemaReservasSalas.Application.Features.RoomSchedules.Commands.RemoveScheduleFromRoom;
+﻿using MediatR;
 
-public class RemoveScheduleFromRoomCommand
-{
-    
-}
+namespace SistemaReservasSalas.Application.Features.RoomSchedules.Commands.RemoveScheduleFromRoom;
+
+public record RemoveScheduleFromRoomCommand(
+    int RoomId,
+    int ScheduleId
+) : IRequest<bool>;
