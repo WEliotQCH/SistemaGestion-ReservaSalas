@@ -1,6 +1,6 @@
-﻿namespace SistemaReservasSalas.Application.Features.Users.Queries.GetUsers;
+﻿using MediatR;
+using SistemaReservasSalas.Application.DTOs;
 
-public class GetUsersQuery
-{
-    
-}
+namespace SistemaReservasSalas.Application.Features.Users.Queries.GetUsers;
+
+public record GetUsersQuery : IRequest<List<UserDto>>;

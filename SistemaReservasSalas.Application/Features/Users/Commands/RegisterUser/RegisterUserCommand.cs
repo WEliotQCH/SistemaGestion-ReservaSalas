@@ -1,6 +1,11 @@
-﻿namespace SistemaReservasSalas.Application.Features.Users.Commands.RegisterUser;
+﻿using MediatR;
 
-public class RegisterUserCommand
-{
-    
-}
+namespace SistemaReservasSalas.Application.Features.Users.Commands.RegisterUser;
+
+public record RegisterUserCommand(
+    string FirstName,
+    string LastName,
+    string Email,
+    string Password,
+    int RoleId
+) : IRequest<int>;
