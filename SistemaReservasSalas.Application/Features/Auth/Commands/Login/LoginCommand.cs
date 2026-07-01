@@ -1,6 +1,9 @@
-﻿namespace SistemaReservasSalas.Application.Features.Auth.Commands.Login;
+﻿using MediatR;
+using SistemaReservasSalas.Application.Features.Auth.Responses;
 
-public class LoginCommand
-{
-    
-}
+namespace SistemaReservasSalas.Application.Features.Auth.Commands.Login;
+
+public record LoginCommand(
+    string Email,
+    string Password
+) : IRequest<AuthenticationResponse?>;

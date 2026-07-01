@@ -1,4 +1,4 @@
-﻿namespace SistemaReservasSalas.Application.Abstractions.Services;
+﻿namespace SistemaReservasSalas.Domain.Interfaces.IServices;
 
 public interface IJwtTokenGenerator
 {
