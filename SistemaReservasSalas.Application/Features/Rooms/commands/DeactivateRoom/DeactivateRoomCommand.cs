@@ -1,6 +1,6 @@
-﻿namespace SistemaReservasSalas.Application.Features.Rooms.commands.DeactivateRoom;
+﻿using MediatR;
 
-public class DeactivateRoomCommand
-{
-    
-}
+namespace SistemaReservasSalas.Application.Features.Rooms.Commands.DeactivateRoom;
+
+public record DeactivateRoomCommand(int Id)
+    : IRequest<bool>;

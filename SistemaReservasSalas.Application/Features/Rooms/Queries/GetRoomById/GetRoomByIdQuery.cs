@@ -1,6 +1,7 @@
-﻿namespace SistemaReservasSalas.Application.Features.Rooms.Queries.GetRoomById;
+﻿using MediatR;
+using SistemaReservasSalas.Application.DTOs;
 
-public class GetRoomByIdQuery
-{
-    
-}
+namespace SistemaReservasSalas.Application.Features.Rooms.Queries.GetRoomById;
+
+public record GetRoomByIdQuery(int Id)
+    : IRequest<RoomDto?>;
