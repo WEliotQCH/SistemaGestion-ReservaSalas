@@ -1,6 +1,6 @@
 ﻿using SistemaReservasSalas.Domain.Entities;
 
-namespace SistemaReservasSalas.Application.Abstractions.Persistence;
+namespace SistemaReservasSalas.Domain.Interfaces.IRepositories;
 
 public interface IRoleRepository
 {
