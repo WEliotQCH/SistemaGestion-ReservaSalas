@@ -433,7 +433,7 @@ npm run dev
 
 # Capturas
 
-Aquí pueden agregarse imágenes de:
+Imagenes de referencia:
 
 <img width="1366" height="639" alt="image" src="https://github.com/user-attachments/assets/b262b9c4-2ed6-4f47-8e3e-467c870b810a" />
 
